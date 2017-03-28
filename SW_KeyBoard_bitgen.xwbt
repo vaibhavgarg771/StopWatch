@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Xilinx\StopWatch_KeyBoard\SW_KeyBoard.ncd
+OUTFILE=F:\Xilinx\StopWatch_KeyBoard\SW_KeyBoard.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=F:\Xilinx\StopWatch_KeyBoard
+LICENSE=WebPack
+USER_INFO=211152735_0_0_933

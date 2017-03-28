@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+xst -intstyle ise -ifn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.xst" -ofn "F:/Xilinx/StopWatch_KeyBoard/SW_KeyBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SW_KeyBoard.ucf -p xc3s500e-fg320-5 SW_KeyBoard.ngc SW_KeyBoard.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SW_KeyBoard_map.ncd SW_KeyBoard.ngd SW_KeyBoard.pcf 
+par -w -intstyle ise -ol high -t 1 SW_KeyBoard_map.ncd SW_KeyBoard.ncd SW_KeyBoard.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SW_KeyBoard.twx SW_KeyBoard.ncd -o SW_KeyBoard.twr SW_KeyBoard.pcf -ucf SW_KeyBoard.ucf 
+bitgen -intstyle ise -f SW_KeyBoard.ut SW_KeyBoard.ncd 
